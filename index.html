@@ -72,15 +72,21 @@ nav .container {
   text-decoration: none; letter-spacing: -0.3px;
 }
 .nav-brand span { color: var(--green); }
+.nav-cta {
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 10px 22px; background: var(--green); color: var(--white);
+  text-decoration: none; font-size: 14px; font-weight: 600;
+  border-radius: 8px; transition: all 0.2s;
+  letter-spacing: -0.2px; white-space: nowrap;
+}
+.nav-cta:hover { background: #236B3F; transform: translateY(-1px); box-shadow: 0 4px 12px rgba(46,125,79,0.3); }
 
 /* ═══════════════════════════════════════════ HERO */
 .hero {
-  min-height: 100vh;
-  padding-top: 56px;
-  display: flex;
-  align-items: center;
+  padding: calc(56px + 64px) 0 48px;
   position: relative;
   overflow: hidden;
+  text-align: center;
 }
 .hero::before {
   content: '';
@@ -88,19 +94,10 @@ nav .container {
   background: radial-gradient(circle, var(--green-light) 0%, transparent 70%);
   opacity: 0.5; pointer-events: none;
 }
-.hero-grid {
-  max-width: 1200px; margin: 0 auto; padding: 0 24px;
-  display: grid;
-  grid-template-columns: 1fr 420px;
-  gap: 64px;
-  align-items: center;
+.hero .container {
+  max-width: 800px; margin: 0 auto; padding: 0 24px;
   position: relative;
-  width: 100%;
 }
-
-/* Left column — copy */
-.hero-copy { position: relative; }
-
 .hero-eyebrow {
   display: inline-block;
   padding: 5px 14px; background: var(--green-light); color: var(--green);
@@ -110,7 +107,7 @@ nav .container {
 }
 .hero h1 {
   font-family: var(--font-display);
-  font-size: clamp(34px, 4.5vw, 54px);
+  font-size: clamp(34px, 5vw, 56px);
   line-height: 1.08; font-weight: 400;
   color: var(--dark); letter-spacing: -1.5px;
   margin-bottom: 18px;
@@ -123,61 +120,78 @@ nav .container {
   background-clip: text;
 }
 .hero-sub {
-  font-size: 16px;
-  color: var(--gray); max-width: 520px;
-  line-height: 1.7; margin-bottom: 24px;
+  font-size: 17px;
+  color: var(--gray); max-width: 600px; margin: 0 auto 28px;
+  line-height: 1.7;
   animation: fadeUp 0.5s 0.16s ease-out both;
 }
-
-/* Value props — compact row */
-.hero-props {
-  display: flex; flex-wrap: wrap; gap: 10px 20px;
-  margin-bottom: 24px;
-  animation: fadeUp 0.5s 0.24s ease-out both;
-}
-.hero-prop {
-  display: flex; align-items: center; gap: 7px;
-  font-size: 13px; font-weight: 500; color: var(--dark-secondary);
-}
-.hero-prop svg { width: 16px; height: 16px; color: var(--green); flex-shrink: 0; }
-
-/* Guarantee badge */
 .hero-guarantee {
   padding: 10px 16px;
   display: inline-flex; align-items: center; gap: 8px;
   background: var(--green-light); border: 1px solid var(--green-mid);
   border-radius: 8px; font-size: 13px; font-weight: 600; color: var(--green);
-  animation: fadeUp 0.5s 0.32s ease-out both;
+  margin-bottom: 12px;
+  animation: fadeUp 0.5s 0.24s ease-out both;
 }
 .hero-guarantee svg { width: 18px; height: 18px; flex-shrink: 0; }
-
 .hero-trust {
-  margin-top: 14px; font-size: 12px; color: var(--gray);
-  animation: fadeUp 0.5s 0.4s ease-out both;
+  font-size: 12px; color: var(--gray);
+  animation: fadeUp 0.5s 0.32s ease-out both;
 }
 
-/* Right column — form */
-.hero-form {
+/* ═══════════════════════════════════════════ ON THE CALL */
+.on-the-call {
+  padding: 48px 0;
   background: var(--gray-light);
-  border-radius: 16px;
-  padding: 24px 20px 20px;
+  text-align: center;
+}
+.on-the-call .container {
+  max-width: 600px; margin: 0 auto; padding: 0 24px;
+}
+.on-the-call h2 {
+  font-family: var(--font-display);
+  font-size: clamp(24px, 3.5vw, 32px);
+  line-height: 1.2; letter-spacing: -0.8px;
+  margin-bottom: 24px; color: var(--dark);
+}
+.call-points {
+  list-style: none; text-align: left;
+  display: flex; flex-direction: column; gap: 14px;
+}
+.call-points li {
+  display: flex; align-items: flex-start; gap: 10px;
+  font-size: 15px; color: var(--dark-secondary); line-height: 1.6;
+}
+.call-points li svg { width: 20px; height: 20px; color: var(--green); flex-shrink: 0; margin-top: 2px; }
+
+/* ═══════════════════════════════════════════ BOOKING */
+.booking {
+  padding: 56px 0;
+  text-align: center;
+}
+.booking .container {
+  max-width: 700px; margin: 0 auto; padding: 0 24px;
+}
+.booking h2 {
+  font-family: var(--font-display);
+  font-size: clamp(26px, 4vw, 36px);
+  line-height: 1.15; letter-spacing: -1px;
+  margin-bottom: 8px; color: var(--dark);
+}
+.booking h2 em {
+  font-style: italic; color: var(--green);
+}
+.booking-sub {
+  font-size: 15px; color: var(--gray);
+  margin-bottom: 32px; line-height: 1.6;
+}
+.calendar-wrapper {
+  background: var(--gray-light); border-radius: 16px;
+  padding: 8px; overflow: hidden;
   border: 1px solid rgba(0,0,0,0.06);
-  animation: fadeUp 0.6s 0.2s ease-out both;
 }
-.hero-form-title {
-  font-size: 16px; font-weight: 700; color: var(--dark);
-  margin-bottom: 4px; text-align: center; letter-spacing: -0.2px;
-}
-.hero-form-sub {
-  font-size: 13px; color: var(--gray); text-align: center;
-  margin-bottom: 16px; line-height: 1.5;
-}
-.ghl-form-wrapper {
-  background: var(--white); border-radius: 10px;
-  padding: 4px; overflow: hidden;
-}
-.ghl-form-wrapper iframe {
-  min-height: 600px; border-radius: 8px;
+.calendar-wrapper iframe {
+  min-height: 700px; border-radius: 12px;
 }
 
 /* ═══════════════════════════════════════════ FOOTER */
@@ -186,6 +200,7 @@ footer {
   font-size: 12px; color: var(--gray);
   border-top: 1px solid rgba(0,0,0,0.06);
 }
+footer a { color: inherit; }
 
 /* ═══════════════════════════════════════════ ANIMATIONS */
 @keyframes fadeUp {
@@ -194,22 +209,10 @@ footer {
 }
 
 /* ═══════════════════════════════════════════ RESPONSIVE */
-@media (max-width: 900px) {
-  .hero { min-height: auto; padding-top: 72px; padding-bottom: 40px; }
-  .hero-grid {
-    grid-template-columns: 1fr;
-    gap: 36px;
-  }
-  .hero-copy { text-align: center; }
-  .hero-sub { margin-left: auto; margin-right: auto; }
-  .hero-props { justify-content: center; }
-  .hero h1 { font-size: clamp(30px, 7vw, 42px); }
-}
-
-@media (max-width: 480px) {
-  .hero-props { flex-direction: column; align-items: center; gap: 6px; }
+@media (max-width: 768px) {
+  .hero { padding: calc(48px + 48px) 0 36px; }
+  .nav-cta { padding: 8px 16px; font-size: 13px; }
   nav .container { height: 48px; }
-  .hero { padding-top: 60px; }
 }
 </style>
 </head>
@@ -219,81 +222,70 @@ footer {
 <nav id="nav">
   <div class="container">
     <a href="#" class="nav-brand">Kelway <span>Automation</span></a>
+    <a href="#book" class="nav-cta">Schedule a Call</a>
   </div>
 </nav>
 
-<!-- ═══════════════════ HERO + FORM ═══════════════════ -->
+<!-- ═══════════════════ HERO ═══════════════════ -->
 <section class="hero">
-  <div class="hero-grid">
-
-    <!-- Copy -->
-    <div class="hero-copy">
-      <div class="hero-eyebrow">For UK Mortgage Brokers</div>
-      <h1>Stop Losing Leads You've <em>Already Paid For</em></h1>
-      <p class="hero-sub">We install a done-for-you system that responds to every enquiry in under 2 minutes, qualifies leads with AI, and books qualified appointments straight into your calendar. 24/7.</p>
-
-      <div class="hero-props">
-        <div class="hero-prop">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-          Instant lead response
-        </div>
-        <div class="hero-prop">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-          AI qualification
-        </div>
-        <div class="hero-prop">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-          Automated booking
-        </div>
-        <div class="hero-prop">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-          No-show recovery
-        </div>
-        <div class="hero-prop">
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
-          Dead lead reactivation
-        </div>
-      </div>
-
-      <div class="hero-guarantee">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
-        10 Extra Qualified Appointments In Your First Month &mdash; Or You Don't Pay
-      </div>
-      <p class="hero-trust">No long-term contracts. Fully done-for-you. Built exclusively for UK mortgage brokers.</p>
+  <div class="container">
+    <div class="hero-eyebrow">For UK Mortgage Brokers</div>
+    <h1>Stop Losing Leads You've <em>Already Paid For</em></h1>
+    <p class="hero-sub">We install a done-for-you system that responds to every enquiry in under 2 minutes, qualifies leads with AI, and books qualified appointments straight into your calendar. 24/7.</p>
+    <div class="hero-guarantee">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+      10 Extra Qualified Appointments In Your First Month &mdash; Or You Don't Pay
     </div>
+    <p class="hero-trust">No long-term contracts. Fully done-for-you. Built exclusively for UK mortgage brokers.</p>
+  </div>
+</section>
 
-    <!-- Form -->
-    <div class="hero-form" id="book">
-      <div class="hero-form-title">See How It Works</div>
-      <div class="hero-form-sub">Drop your details and we'll reach out to walk you through it.</div>
-      <div class="ghl-form-wrapper">
-        <iframe
-          src="https://api.leadconnectorhq.com/widget/form/vJtdax3gSlfN67oDDacE"
-          style="width:100%;height:100%;border:none;border-radius:3px"
-          id="inline-vJtdax3gSlfN67oDDacE"
-          data-layout="{'id':'INLINE'}"
-          data-trigger-type="alwaysShow"
-          data-trigger-value=""
-          data-activation-type="alwaysActivated"
-          data-activation-value=""
-          data-deactivation-type="neverDeactivate"
-          data-deactivation-value=""
-          data-form-name="Landing page Qualification Form"
-          data-height="600"
-          data-layout-iframe-id="inline-vJtdax3gSlfN67oDDacE"
-          data-form-id="vJtdax3gSlfN67oDDacE"
-          title="Landing page Qualification Form"
-        ></iframe>
-      </div>
+<!-- ═══════════════════ ON THE CALL ═══════════════════ -->
+<section class="on-the-call">
+  <div class="container">
+    <h2>On The Call We'll Show You How To:</h2>
+    <ul class="call-points">
+      <li>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+        Respond to every lead in under 2 minutes &mdash; even at 11pm on a Saturday
+      </li>
+      <li>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+        Qualify leads automatically so your advisers only speak to serious prospects
+      </li>
+      <li>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+        Recover no-shows and chase stalled proposals without lifting a finger
+      </li>
+      <li>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg>
+        Reactivate dead leads from the last 6&ndash;24 months &mdash; the cheapest leads you'll ever get
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ═══════════════════ BOOKING ═══════════════════ -->
+<section class="booking" id="book">
+  <div class="container">
+    <h2>Schedule Your Free <em>Strategy Call</em></h2>
+    <p class="booking-sub">20 minutes. No obligation. We'll look at your current setup and show you exactly where you're losing leads.</p>
+    <div class="calendar-wrapper">
+      <iframe
+        src="https://api.leadconnectorhq.com/widget/booking/HQHDpjKjIqQQ0wI4Uy0j"
+        style="width:100%;height:100%;border:none;overflow:hidden;"
+        scrolling="no"
+        id="HQHDpjKjIqQQ0wI4Uy0j_1776035678902"
+        title="Schedule a Strategy Call"
+      ></iframe>
     </div>
-
   </div>
 </section>
 
 <!-- ═══════════════════ FOOTER ═══════════════════ -->
 <footer>
   <div class="container">
-    Kelway Automation &mdash; Built exclusively for UK mortgage brokers &middot; <a href="/privacy.html" style="color: inherit; text-decoration: underline;">Privacy Policy</a>
+    Kelway Automation &mdash; Built exclusively for UK mortgage brokers &middot; <a href="/privacy.html" style="text-decoration: underline;">Privacy Policy</a>
   </div>
 </footer>
 
@@ -305,9 +297,9 @@ window.addEventListener('scroll', () => {
   nav.classList.toggle('scrolled', window.scrollY > 20);
 });
 
-// Meta Pixel: fire Lead event when form scrolls into view
-const formSection = document.getElementById('book');
-if (formSection && typeof fbq === 'function') {
+// Meta Pixel: fire Lead event when booking section scrolls into view
+const bookingSection = document.getElementById('book');
+if (bookingSection && typeof fbq === 'function') {
   const formObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -316,7 +308,7 @@ if (formSection && typeof fbq === 'function') {
       }
     });
   }, { threshold: 0.3 });
-  formObserver.observe(formSection);
+  formObserver.observe(bookingSection);
 }
 </script>
 <script src="https://link.msgsndr.com/js/form_embed.js"></script>
