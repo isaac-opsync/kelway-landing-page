@@ -1,0 +1,1898 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stop Losing Leads You've Already Paid For | Kelway Automation for UK Mortgage Brokers</title>
+<meta name="description" content="Done-for-you lead conversion system for UK mortgage brokers. Every enquiry answered in under 2 minutes, AI qualification, automated booking, no-show recovery. 10 extra appointments in month one or you don't pay.">
+<meta property="og:title" content="Stop Losing Leads You've Already Paid For | Kelway Automation">
+<meta property="og:description" content="Done-for-you lead conversion system for UK mortgage brokers. 10 extra appointments in month one or you don't pay.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300..700;1,9..40,300..700&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1531057518438783');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1531057518438783&ev=PageView&noscript=1"/></noscript>
+
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --bg: #0A0D0F;
+  --bg-soft: #0E1214;
+  --surface: #12171A;
+  --surface-raised: #161B1E;
+  --text: #F3F5F2;
+  --text-dim: #9BA3A0;
+  --text-mute: #5F6764;
+  --green: #34D17E;
+  --green-soft: #2EB86F;
+  --green-glow: rgba(52, 209, 126, 0.22);
+  --green-ambient: rgba(52, 209, 126, 0.08);
+  --red-soft: #E27069;
+  --red-ambient: rgba(226, 112, 105, 0.08);
+  --border: rgba(255, 255, 255, 0.07);
+  --border-strong: rgba(255, 255, 255, 0.12);
+  --border-green: rgba(52, 209, 126, 0.28);
+  --border-red: rgba(226, 112, 105, 0.22);
+  --font-display: 'Instrument Serif', Georgia, serif;
+  --font-body: 'DM Sans', -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: var(--font-body);
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.6;
+  font-size: 16px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.grain {
+  position: fixed; inset: 0; z-index: 1; pointer-events: none;
+  opacity: 0.035; mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.container {
+  max-width: 1200px; margin: 0 auto; padding: 0 32px;
+  position: relative; z-index: 2;
+}
+section { position: relative; z-index: 2; }
+
+/* ═══════════════════════════════════════════ EYEBROW */
+.eyebrow {
+  display: inline-flex; align-items: center; gap: 12px;
+  padding: 6px 18px 6px 6px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  font-size: 13px; font-weight: 500;
+  color: var(--text-dim);
+  letter-spacing: -0.1px;
+}
+.eyebrow-num {
+  width: 26px; height: 26px;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: var(--text);
+  color: var(--bg);
+  border-radius: 50%;
+  font-size: 12px; font-weight: 600;
+  font-family: var(--font-mono);
+}
+.eyebrow-mono {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--green);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border: 1px solid var(--border-green);
+  border-radius: 100px;
+  background: var(--green-ambient);
+}
+
+/* ═══════════════════════════════════════════ HEADLINES */
+.display {
+  font-family: var(--font-display);
+  font-weight: 400;
+  letter-spacing: -0.02em;
+  line-height: 1.02;
+  color: var(--text);
+}
+.display em {
+  font-style: italic;
+  color: var(--green);
+}
+
+/* ═══════════════════════════════════════════ BUTTONS */
+.btn {
+  display: inline-flex; align-items: center; gap: 10px;
+  padding: 14px 8px 14px 26px;
+  font-family: var(--font-body);
+  font-size: 15px; font-weight: 500;
+  text-decoration: none;
+  border-radius: 100px;
+  transition: all 0.4s var(--ease);
+  cursor: pointer; border: 1px solid transparent;
+  letter-spacing: -0.15px;
+}
+.btn-primary {
+  background: var(--green);
+  color: var(--bg);
+  border-color: var(--green);
+  box-shadow: 0 8px 28px var(--green-glow);
+}
+.btn-primary:hover {
+  background: var(--text);
+  border-color: var(--text);
+  color: var(--bg);
+  transform: translateY(-1px);
+  box-shadow: 0 10px 36px rgba(52, 209, 126, 0.35);
+}
+.btn-primary .arrow {
+  width: 30px; height: 30px; border-radius: 50%;
+  background: var(--bg); color: var(--green);
+  display: inline-flex; align-items: center; justify-content: center;
+  transition: all 0.4s var(--ease);
+}
+.btn-primary:hover .arrow {
+  background: var(--bg); color: var(--text);
+  transform: translateX(2px);
+}
+.btn-ghost {
+  background: transparent;
+  color: var(--text);
+  border-color: var(--border-strong);
+}
+.btn-ghost:hover {
+  border-color: var(--green);
+  color: var(--green);
+}
+.btn-ghost .arrow {
+  width: 30px; height: 30px; border-radius: 50%;
+  background: var(--surface); color: var(--text);
+  display: inline-flex; align-items: center; justify-content: center;
+  transition: all 0.4s var(--ease);
+  border: 1px solid var(--border);
+}
+.btn-ghost:hover .arrow {
+  background: var(--green); color: var(--bg); border-color: var(--green);
+  transform: translateX(2px);
+}
+.btn-large {
+  padding: 18px 12px 18px 32px;
+  font-size: 17px;
+}
+.btn-large .arrow {
+  width: 34px; height: 34px;
+}
+
+/* ═══════════════════════════════════════════ NAV */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  transition: all 0.3s var(--ease);
+  padding: 16px 0;
+}
+nav::before {
+  content: ''; position: absolute; inset: 0;
+  background: rgba(10, 13, 15, 0.0);
+  backdrop-filter: blur(0px);
+  transition: all 0.3s var(--ease);
+  border-bottom: 1px solid transparent;
+}
+nav.scrolled::before {
+  background: rgba(10, 13, 15, 0.7);
+  backdrop-filter: blur(18px);
+  border-bottom-color: var(--border);
+}
+nav .container {
+  display: flex; justify-content: space-between; align-items: center;
+}
+.brand {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-family: var(--font-body);
+  font-weight: 500; font-size: 16px;
+  color: var(--text); text-decoration: none;
+  letter-spacing: -0.3px;
+}
+.brand-dot {
+  width: 8px; height: 8px; border-radius: 50%;
+  background: var(--green);
+  box-shadow: 0 0 12px var(--green-glow);
+  animation: pulse 2.4s ease-in-out infinite;
+}
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.6; transform: scale(0.85); }
+}
+.nav-cta {
+  padding: 9px 6px 9px 20px;
+  font-size: 14px;
+}
+.nav-cta .arrow {
+  width: 26px; height: 26px;
+}
+
+/* ═══════════════════════════════════════════ HERO */
+.hero {
+  padding: 140px 0 80px;
+  position: relative;
+  overflow: hidden;
+}
+.hero::before {
+  content: ''; position: absolute;
+  top: -200px; left: 50%; transform: translateX(-50%);
+  width: 1100px; height: 800px;
+  background: radial-gradient(ellipse at center, var(--green-ambient) 0%, transparent 60%);
+  pointer-events: none; z-index: 0;
+  filter: blur(20px);
+}
+.hero-grid-bg {
+  position: absolute; inset: 0; z-index: 0;
+  background-image:
+    linear-gradient(var(--border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--border) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: radial-gradient(ellipse at center, black 20%, transparent 70%);
+  -webkit-mask-image: radial-gradient(ellipse at center, black 20%, transparent 70%);
+  opacity: 0.4;
+}
+.hero .container {
+  text-align: center;
+  max-width: 920px;
+}
+.hero-eyebrow {
+  animation: riseIn 0.8s var(--ease) both;
+  animation-delay: 0.05s;
+  margin-bottom: 28px;
+}
+.hero h1 {
+  font-size: clamp(40px, 6vw, 78px);
+  margin: 0 auto 24px;
+  max-width: 880px;
+  animation: riseIn 0.9s var(--ease) both;
+  animation-delay: 0.15s;
+}
+.hero h1 .accent {
+  font-style: italic;
+  color: var(--green);
+}
+.hero-sub {
+  font-size: clamp(16px, 1.3vw, 19px);
+  color: var(--text-dim);
+  max-width: 720px;
+  margin: 0 auto 44px;
+  line-height: 1.55;
+  animation: riseIn 0.9s var(--ease) both;
+  animation-delay: 0.3s;
+}
+
+/* ═══════════════════════════════════════════ VSL PLAYER */
+.vsl-wrap {
+  max-width: 880px;
+  margin: 0 auto 36px;
+  animation: riseIn 1s var(--ease) both;
+  animation-delay: 0.4s;
+  position: relative;
+}
+.vsl-wrap::before {
+  content: ''; position: absolute;
+  inset: -40px;
+  background: radial-gradient(ellipse at center, var(--green-ambient) 0%, transparent 70%);
+  filter: blur(40px);
+  pointer-events: none;
+  z-index: 0;
+}
+.vsl-frame {
+  position: relative;
+  background: linear-gradient(180deg, var(--surface-raised) 0%, var(--surface) 100%);
+  border: 1px solid var(--border-strong);
+  border-radius: 18px;
+  overflow: hidden;
+  box-shadow:
+    0 32px 100px rgba(0,0,0,0.55),
+    0 4px 12px rgba(0,0,0,0.4),
+    inset 0 1px 0 rgba(255,255,255,0.05);
+  z-index: 1;
+}
+.vsl-chrome {
+  display: flex; align-items: center; gap: 8px;
+  padding: 14px 18px;
+  border-bottom: 1px solid var(--border);
+  background: rgba(255,255,255,0.015);
+}
+.chrome-dot {
+  width: 11px; height: 11px; border-radius: 50%;
+}
+.chrome-dot:nth-child(1) { background: rgba(255, 95, 86, 0.7); }
+.chrome-dot:nth-child(2) { background: rgba(255, 189, 46, 0.7); }
+.chrome-dot:nth-child(3) { background: rgba(39, 201, 63, 0.7); }
+.chrome-title {
+  margin-left: 16px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-mute);
+  letter-spacing: -0.2px;
+}
+.chrome-status {
+  margin-left: auto;
+  display: inline-flex; align-items: center; gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--green);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+}
+.chrome-status::before {
+  content: ''; width: 6px; height: 6px; border-radius: 50%;
+  background: var(--green);
+  box-shadow: 0 0 8px var(--green-glow);
+  animation: pulse 1.8s ease-in-out infinite;
+}
+.vsl-video {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  background: linear-gradient(135deg, #0a1614 0%, #0a0d0f 60%, #0d1a14 100%);
+  display: flex; align-items: center; justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+}
+.vsl-video::before {
+  content: ''; position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse at 30% 30%, rgba(52,209,126,0.18) 0%, transparent 55%),
+    radial-gradient(ellipse at 70% 70%, rgba(52,209,126,0.10) 0%, transparent 55%);
+  pointer-events: none;
+}
+.vsl-poster-grid {
+  position: absolute; inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+  background-size: 40px 40px;
+  mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+  -webkit-mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
+  pointer-events: none;
+}
+.vsl-content {
+  position: relative; z-index: 2;
+  text-align: center;
+  padding: 32px;
+}
+.play-button {
+  width: 88px; height: 88px;
+  border-radius: 50%;
+  background: var(--green);
+  color: var(--bg);
+  display: inline-flex; align-items: center; justify-content: center;
+  margin-bottom: 24px;
+  box-shadow: 0 0 0 8px rgba(52, 209, 126, 0.15), 0 20px 40px rgba(52, 209, 126, 0.25);
+  transition: all 0.3s var(--ease);
+  cursor: pointer;
+}
+.vsl-video:hover .play-button {
+  transform: scale(1.08);
+  box-shadow: 0 0 0 12px rgba(52, 209, 126, 0.18), 0 24px 50px rgba(52, 209, 126, 0.35);
+}
+.play-button svg {
+  width: 32px; height: 32px;
+  margin-left: 4px;
+}
+.vsl-label {
+  font-family: var(--font-display);
+  font-size: clamp(20px, 2vw, 26px);
+  color: var(--text);
+  font-style: italic;
+  margin-bottom: 6px;
+}
+.vsl-meta {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-mute);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+.hero-trust {
+  display: inline-flex; gap: 24px;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-mute);
+  letter-spacing: 0.05em;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 28px;
+  animation: riseIn 0.9s var(--ease) both;
+  animation-delay: 0.6s;
+}
+.hero-trust span {
+  display: inline-flex; align-items: center; gap: 8px;
+}
+.hero-trust span::before {
+  content: ''; width: 4px; height: 4px; border-radius: 50%;
+  background: var(--green);
+}
+
+/* ═══════════════════════════════════════════ SECTION HEAD */
+.section-head {
+  margin-bottom: 64px;
+  max-width: 760px;
+}
+.section-head .eyebrow,
+.section-head .eyebrow-mono {
+  margin-bottom: 28px;
+}
+.section-head h2 {
+  font-size: clamp(34px, 4vw, 56px);
+}
+.section-head p.lead {
+  margin-top: 22px;
+  font-size: 17px;
+  color: var(--text-dim);
+  max-width: 620px;
+  line-height: 1.55;
+}
+.section-head.center {
+  margin-left: auto; margin-right: auto;
+  text-align: center;
+}
+.section-head.center p.lead {
+  margin-left: auto; margin-right: auto;
+}
+
+/* ═══════════════════════════════════════════ SECTION: PROBLEM */
+.problem {
+  padding: 120px 0 100px;
+  position: relative;
+}
+.problem::before {
+  content: ''; position: absolute;
+  top: 30%; right: -20%;
+  width: 600px; height: 600px;
+  background: radial-gradient(circle, var(--red-ambient) 0%, transparent 70%);
+  filter: blur(40px);
+  pointer-events: none;
+}
+.leaks {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+.leak {
+  position: relative;
+  padding: 32px 28px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  min-height: 320px;
+  display: flex; flex-direction: column;
+  transition: all 0.5s var(--ease);
+}
+.leak:hover {
+  border-color: var(--border-red);
+  background: var(--surface-raised);
+  transform: translateY(-3px);
+}
+.leak-num {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-mute);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+.leak-stat {
+  font-family: var(--font-display);
+  font-size: clamp(36px, 3.6vw, 52px);
+  color: var(--red-soft);
+  line-height: 1;
+  margin-bottom: 8px;
+  font-style: italic;
+}
+.leak-cap {
+  font-family: var(--font-mono);
+  font-size: 11.5px;
+  color: var(--text-mute);
+  letter-spacing: -0.1px;
+  margin-bottom: 22px;
+  line-height: 1.5;
+}
+.leak h3 {
+  font-family: var(--font-body);
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: -0.3px;
+  color: var(--text);
+  margin-bottom: 12px;
+}
+.leak p {
+  font-size: 14px;
+  color: var(--text-dim);
+  line-height: 1.55;
+  flex: 1;
+}
+.mid-cta {
+  text-align: center;
+  margin-top: 56px;
+}
+
+/* ═══════════════════════════════════════════ SECTION: SOLUTION */
+.solution {
+  padding: 120px 0 100px;
+  position: relative;
+}
+.solution::before {
+  content: ''; position: absolute;
+  top: 10%; left: -15%;
+  width: 600px; height: 600px;
+  background: radial-gradient(circle, var(--green-ambient) 0%, transparent 70%);
+  filter: blur(40px);
+  pointer-events: none;
+}
+.steps-5 {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 80px;
+}
+.step {
+  position: relative;
+  padding: 28px 24px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  transition: all 0.5s var(--ease);
+  min-height: 280px;
+  display: flex; flex-direction: column;
+}
+.step:hover {
+  border-color: var(--border-green);
+  background: var(--surface-raised);
+  transform: translateY(-3px);
+}
+.step-num {
+  width: 32px; height: 32px; border-radius: 50%;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: var(--text);
+  color: var(--bg);
+  font-family: var(--font-mono);
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 18px;
+  transition: all 0.5s var(--ease);
+}
+.step:hover .step-num {
+  background: var(--green);
+  box-shadow: 0 0 24px var(--green-glow);
+}
+.step-label {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  color: var(--text-mute);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.step h3 {
+  font-family: var(--font-body);
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: -0.3px;
+  color: var(--text);
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+.step p {
+  font-size: 13.5px;
+  color: var(--text-dim);
+  line-height: 1.55;
+  flex: 1;
+}
+
+.workflow-divider {
+  text-align: center;
+  margin-bottom: 40px;
+}
+.workflow-divider .eyebrow-mono {
+  margin: 0;
+}
+.workflow-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+}
+.wf {
+  padding: 22px 22px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  transition: all 0.4s var(--ease);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 130px;
+}
+.wf:hover {
+  border-color: var(--border-green);
+  background: var(--surface-raised);
+}
+.wf-num {
+  font-family: var(--font-mono);
+  font-size: 10.5px;
+  color: var(--green);
+  letter-spacing: 0.18em;
+}
+.wf h4 {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--text);
+  letter-spacing: -0.2px;
+}
+.wf p {
+  font-size: 13px;
+  color: var(--text-dim);
+  line-height: 1.5;
+}
+
+/* ═══════════════════════════════════════════ SECTION: PROOF */
+.proof {
+  padding: 120px 0 100px;
+  position: relative;
+}
+.proof::before {
+  content: ''; position: absolute;
+  top: 40%; right: -20%;
+  width: 600px; height: 600px;
+  background: radial-gradient(circle, var(--green-ambient) 0%, transparent 70%);
+  filter: blur(40px);
+  pointer-events: none;
+}
+.stats-3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+  margin-bottom: 72px;
+}
+.stat-card {
+  position: relative;
+  padding: 40px 32px;
+  background: linear-gradient(180deg, var(--surface-raised) 0%, var(--surface) 100%);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  transition: all 0.5s var(--ease);
+  overflow: hidden;
+}
+.stat-card:hover {
+  border-color: var(--border-green);
+  transform: translateY(-3px);
+}
+.stat-card::before {
+  content: ''; position: absolute;
+  top: -50%; right: -30%;
+  width: 250px; height: 250px;
+  background: radial-gradient(circle, var(--green-ambient) 0%, transparent 70%);
+  pointer-events: none;
+}
+.stat-num {
+  font-family: var(--font-display);
+  font-size: clamp(56px, 6vw, 88px);
+  color: var(--green);
+  font-style: italic;
+  line-height: 1;
+  margin-bottom: 14px;
+  position: relative;
+}
+.stat-cap {
+  font-size: 15px;
+  color: var(--text);
+  line-height: 1.45;
+  margin-bottom: 18px;
+  position: relative;
+}
+.stat-source {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  color: var(--text-mute);
+  letter-spacing: -0.1px;
+  font-style: italic;
+  position: relative;
+}
+
+.dogfood-block {
+  background: linear-gradient(180deg, var(--surface) 0%, var(--bg-soft) 100%);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 56px 48px;
+  margin-bottom: 56px;
+}
+.dogfood-block h3 {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 3vw, 40px);
+  margin-bottom: 18px;
+  letter-spacing: -0.02em;
+  line-height: 1.1;
+}
+.dogfood-block h3 em {
+  font-style: italic;
+  color: var(--green);
+}
+.dogfood-block p {
+  font-size: 15.5px;
+  color: var(--text-dim);
+  line-height: 1.65;
+  margin-bottom: 12px;
+  max-width: 680px;
+}
+.dogfood-block p.lead-line {
+  color: var(--text);
+  margin-bottom: 32px;
+}
+.dogfood-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 32px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+}
+.dogfood-table th,
+.dogfood-table td {
+  padding: 16px 22px;
+  text-align: left;
+  font-size: 14.5px;
+  border-bottom: 1px solid var(--border);
+}
+.dogfood-table th {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-mute);
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  background: rgba(255,255,255,0.015);
+}
+.dogfood-table td:first-child {
+  color: var(--text-dim);
+}
+.dogfood-table td.before {
+  color: var(--red-soft);
+  font-family: var(--font-mono);
+  font-size: 14px;
+}
+.dogfood-table td.after {
+  color: var(--green);
+  font-family: var(--font-mono);
+  font-size: 14px;
+  font-weight: 500;
+}
+.dogfood-table tr:last-child td {
+  border-bottom: none;
+}
+
+.founding-block {
+  background: linear-gradient(160deg, rgba(52,209,126,0.06) 0%, rgba(52,209,126,0.02) 100%);
+  border: 1px solid var(--border-green);
+  border-radius: 24px;
+  padding: 48px 44px;
+  position: relative;
+  overflow: hidden;
+}
+.founding-block::before {
+  content: ''; position: absolute;
+  top: -50%; right: -10%;
+  width: 500px; height: 400px;
+  background: radial-gradient(ellipse at center, var(--green-ambient) 0%, transparent 70%);
+  pointer-events: none;
+}
+.founding-block h3 {
+  font-family: var(--font-display);
+  font-size: clamp(28px, 3vw, 40px);
+  margin-bottom: 18px;
+  position: relative;
+}
+.founding-block h3 em {
+  font-style: italic;
+  color: var(--green);
+}
+.founding-block > p {
+  font-size: 15.5px;
+  color: var(--text-dim);
+  line-height: 1.65;
+  margin-bottom: 28px;
+  max-width: 680px;
+  position: relative;
+}
+.founding-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 32px;
+  margin-bottom: 32px;
+  position: relative;
+}
+.founding-list li {
+  display: flex; align-items: flex-start; gap: 12px;
+  font-size: 14.5px;
+  color: var(--text);
+  line-height: 1.5;
+}
+.founding-list li::before {
+  content: ''; flex-shrink: 0;
+  width: 18px; height: 18px; border-radius: 50%;
+  background: var(--green);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230A0D0F' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+  background-size: 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 2px;
+}
+.founding-meta {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--green);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 16px;
+  border: 1px solid var(--border-green);
+  border-radius: 100px;
+  background: rgba(52,209,126,0.08);
+}
+.founding-meta::before {
+  content: ''; width: 6px; height: 6px; border-radius: 50%;
+  background: var(--green);
+  box-shadow: 0 0 10px var(--green-glow);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+/* ═══════════════════════════════════════════ SECTION: OFFER */
+.offer {
+  padding: 120px 0 100px;
+  position: relative;
+}
+.compare-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 56px;
+  align-items: stretch;
+}
+.compare-card {
+  padding: 40px 36px;
+  border-radius: 18px;
+  display: flex; flex-direction: column;
+}
+.compare-card--bad {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  opacity: 0.85;
+}
+.compare-card--good {
+  background: linear-gradient(160deg, rgba(52,209,126,0.06) 0%, rgba(255,255,255,0.01) 100%);
+  border: 1px solid var(--border-green);
+  position: relative;
+  overflow: hidden;
+}
+.compare-card--good::before {
+  content: ''; position: absolute;
+  top: -40%; right: -20%;
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, var(--green-ambient) 0%, transparent 70%);
+  pointer-events: none;
+}
+.compare-card h3 {
+  font-family: var(--font-display);
+  font-size: clamp(22px, 2.4vw, 30px);
+  margin-bottom: 28px;
+  letter-spacing: -0.02em;
+  position: relative;
+}
+.compare-card--bad h3 { color: var(--text-dim); }
+.compare-card--good h3 em {
+  font-style: italic; color: var(--green);
+}
+.cost-row {
+  display: flex; justify-content: space-between; align-items: baseline;
+  padding: 14px 0;
+  border-bottom: 1px dashed var(--border);
+  position: relative;
+}
+.cost-row:last-of-type { border-bottom: none; }
+.cost-row .item {
+  font-size: 14.5px;
+  color: var(--text-dim);
+  letter-spacing: -0.1px;
+}
+.cost-row .price {
+  font-family: var(--font-mono);
+  font-size: 13.5px;
+  color: var(--text-mute);
+  white-space: nowrap;
+}
+.cost-row.total {
+  margin-top: 12px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-strong);
+  border-bottom: none;
+}
+.cost-row.total .item {
+  color: var(--text);
+  font-weight: 500;
+  font-size: 15px;
+}
+.cost-row.total .price {
+  color: var(--red-soft);
+  font-size: 16px;
+  font-weight: 500;
+}
+.compare-card--bad .footnote {
+  margin-top: 16px;
+  font-size: 12.5px;
+  color: var(--text-mute);
+  font-style: italic;
+}
+
+.kelway-pricing {
+  position: relative;
+  margin-bottom: 24px;
+}
+.kelway-pricing .row {
+  display: flex; justify-content: space-between; align-items: baseline;
+  margin-bottom: 12px;
+}
+.kelway-pricing .row .label {
+  font-size: 14.5px;
+  color: var(--text-dim);
+}
+.kelway-pricing .row .val {
+  font-family: var(--font-mono);
+  font-size: 14px;
+  color: var(--text);
+}
+.kelway-pricing .row.year-total {
+  border-top: 1px solid var(--border-green);
+  padding-top: 14px;
+  margin-top: 14px;
+}
+.kelway-pricing .row.year-total .label {
+  color: var(--text);
+  font-weight: 500;
+  font-size: 15px;
+}
+.kelway-pricing .row.year-total .val {
+  color: var(--green);
+  font-size: 18px;
+  font-weight: 500;
+}
+.includes-list {
+  list-style: none;
+  margin-top: 24px;
+  position: relative;
+}
+.includes-list li {
+  display: flex; align-items: flex-start; gap: 12px;
+  font-size: 14px;
+  color: var(--text);
+  padding: 8px 0;
+  line-height: 1.45;
+}
+.includes-list li::before {
+  content: ''; flex-shrink: 0;
+  width: 16px; height: 16px; border-radius: 50%;
+  background: var(--green);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230A0D0F' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+  background-size: 11px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 4px;
+}
+.breakeven {
+  margin-top: 24px;
+  padding: 18px 22px;
+  background: var(--bg-soft);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  font-size: 14px;
+  color: var(--text-dim);
+  line-height: 1.55;
+  position: relative;
+}
+.breakeven strong { color: var(--text); font-weight: 500; }
+
+.guarantee-banner {
+  position: relative;
+  padding: 64px 56px;
+  border-radius: 28px;
+  background:
+    radial-gradient(ellipse at 30% 30%, rgba(52,209,126,0.18) 0%, transparent 60%),
+    radial-gradient(ellipse at 70% 70%, rgba(52,209,126,0.10) 0%, transparent 60%),
+    linear-gradient(160deg, #0d2820 0%, #0a1814 100%);
+  border: 1px solid var(--border-green);
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 24px 60px rgba(0,0,0,0.4);
+}
+.guarantee-banner::before {
+  content: ''; position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(52,209,126,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(52,209,126,0.04) 1px, transparent 1px);
+  background-size: 40px 40px;
+  mask-image: radial-gradient(ellipse at center, black 20%, transparent 75%);
+  -webkit-mask-image: radial-gradient(ellipse at center, black 20%, transparent 75%);
+  pointer-events: none;
+}
+.guarantee-tag {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--green);
+  margin-bottom: 24px;
+  padding: 6px 16px;
+  border: 1px solid var(--border-green);
+  border-radius: 100px;
+  background: rgba(52,209,126,0.08);
+  position: relative;
+}
+.guarantee-banner h3 {
+  font-family: var(--font-display);
+  font-size: clamp(34px, 4.5vw, 60px);
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  max-width: 920px;
+  margin: 0 auto 28px;
+  position: relative;
+}
+.guarantee-banner h3 em {
+  font-style: italic;
+  color: var(--green);
+}
+.guarantee-banner p {
+  font-size: 16px;
+  color: var(--text-dim);
+  max-width: 680px;
+  margin: 0 auto 8px;
+  line-height: 1.6;
+  position: relative;
+}
+.guarantee-banner p.fine {
+  font-size: 13px;
+  color: var(--text-mute);
+  font-style: italic;
+  margin-top: 18px;
+}
+
+/* ═══════════════════════════════════════════ SECTION: FIT */
+.fit {
+  padding: 120px 0 100px;
+  position: relative;
+}
+.fit-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 48px;
+}
+.fit-card {
+  padding: 40px 36px;
+  border-radius: 18px;
+}
+.fit-card--yes {
+  background: linear-gradient(160deg, rgba(52,209,126,0.05) 0%, rgba(255,255,255,0.01) 100%);
+  border: 1px solid var(--border-green);
+}
+.fit-card--no {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  opacity: 0.9;
+}
+.fit-card h3 {
+  font-family: var(--font-display);
+  font-size: clamp(22px, 2.4vw, 28px);
+  margin-bottom: 28px;
+  letter-spacing: -0.02em;
+}
+.fit-card--yes h3 em { font-style: italic; color: var(--green); }
+.fit-list {
+  list-style: none;
+}
+.fit-list li {
+  display: flex; align-items: flex-start; gap: 14px;
+  padding: 12px 0;
+  font-size: 14.5px;
+  color: var(--text);
+  line-height: 1.5;
+}
+.fit-list li::before {
+  content: ''; flex-shrink: 0;
+  width: 22px; height: 22px; border-radius: 50%;
+  margin-top: 1px;
+  background-size: 12px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.fit-card--yes .fit-list li::before {
+  background-color: var(--green);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230A0D0F' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='20 6 9 17 4 12'/%3E%3C/svg%3E");
+}
+.fit-card--no .fit-list li {
+  color: var(--text-dim);
+}
+.fit-card--no .fit-list li::before {
+  background-color: rgba(255,255,255,0.06);
+  border: 1px solid var(--border-strong);
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23E27069' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cline x1='18' y1='6' x2='6' y2='18'/%3E%3Cline x1='6' y1='6' x2='18' y2='18'/%3E%3C/svg%3E");
+}
+
+/* ═══════════════════════════════════════════ SECTION: FAQ */
+.faq-section {
+  padding: 100px 0 100px;
+  position: relative;
+}
+.faq-list {
+  max-width: 880px;
+}
+.faq-item {
+  border-bottom: 1px solid var(--border);
+}
+.faq-item summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 28px 0;
+  display: flex; align-items: flex-start; gap: 24px;
+  font-family: var(--font-body);
+  font-size: 17.5px;
+  font-weight: 500;
+  color: var(--text);
+  letter-spacing: -0.3px;
+  transition: color 0.3s ease;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary:hover { color: var(--green); }
+.faq-icon {
+  flex-shrink: 0;
+  width: 32px; height: 32px; border-radius: 50%;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  display: inline-flex; align-items: center; justify-content: center;
+  transition: all 0.3s var(--ease);
+  margin-top: 2px;
+}
+.faq-icon svg {
+  width: 14px; height: 14px;
+  transition: transform 0.4s var(--ease);
+}
+.faq-item[open] .faq-icon {
+  background: var(--green);
+  border-color: var(--green);
+  color: var(--bg);
+}
+.faq-item[open] .faq-icon svg {
+  transform: rotate(45deg);
+}
+.faq-q {
+  flex: 1;
+}
+.faq-a {
+  padding: 0 0 32px 56px;
+  font-size: 15.5px;
+  color: var(--text-dim);
+  line-height: 1.7;
+  max-width: 760px;
+}
+
+/* ═══════════════════════════════════════════ SECTION: FINAL CTA */
+.final-cta {
+  padding: 140px 0 160px;
+  position: relative;
+  overflow: hidden;
+}
+.final-cta::before {
+  content: ''; position: absolute;
+  top: 50%; left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1000px; height: 800px;
+  background:
+    radial-gradient(ellipse at center, rgba(52,209,126,0.22) 0%, transparent 55%),
+    radial-gradient(ellipse at 30% 70%, rgba(52,209,126,0.15) 0%, transparent 55%);
+  filter: blur(40px);
+  pointer-events: none;
+}
+.final-cta-wrap {
+  position: relative;
+  background: linear-gradient(180deg, rgba(255,255,255,0.025) 0%, rgba(255,255,255,0.005) 100%);
+  border: 1px solid var(--border);
+  border-radius: 28px;
+  padding: 96px 56px;
+  text-align: center;
+  overflow: hidden;
+  box-shadow: 0 24px 80px rgba(0,0,0,0.4);
+}
+.final-cta-wrap::before {
+  content: ''; position: absolute;
+  top: -40%; left: 50%;
+  transform: translateX(-50%);
+  width: 900px; height: 600px;
+  background: radial-gradient(ellipse at center, rgba(52,209,126,0.12) 0%, transparent 70%);
+  pointer-events: none;
+}
+.final-cta-wrap .eyebrow-mono { margin-bottom: 32px; position: relative; }
+.final-cta-wrap h2 {
+  font-size: clamp(40px, 5.2vw, 76px);
+  margin-bottom: 24px;
+  position: relative;
+  max-width: 880px;
+  margin-left: auto; margin-right: auto;
+}
+.final-cta-wrap p.lead {
+  font-size: 17px;
+  color: var(--text-dim);
+  max-width: 660px;
+  margin: 0 auto 44px;
+  line-height: 1.65;
+  position: relative;
+}
+.final-trust-points {
+  display: flex; justify-content: center; gap: 20px;
+  flex-wrap: wrap;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-mute);
+  letter-spacing: 0.05em;
+  margin-top: 36px;
+  position: relative;
+}
+.final-trust-points span {
+  display: inline-flex; align-items: center; gap: 8px;
+}
+.final-trust-points span::before {
+  content: '↳';
+  color: var(--green);
+}
+
+/* ═══════════════════════════════════════════ FOOTER */
+footer {
+  border-top: 1px solid var(--border);
+  padding: 40px 0;
+  position: relative; z-index: 2;
+}
+footer .container {
+  display: flex; justify-content: space-between; align-items: center;
+  flex-wrap: wrap; gap: 16px;
+}
+.foot-brand {
+  display: inline-flex; align-items: center; gap: 10px;
+  font-size: 14px; color: var(--text-dim);
+  letter-spacing: -0.2px;
+}
+.foot-tag {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-mute);
+  letter-spacing: 0.05em;
+}
+.foot-links {
+  display: inline-flex; gap: 28px;
+  font-size: 14px;
+}
+.foot-links a {
+  color: var(--text-dim);
+  text-decoration: none;
+  transition: color 0.2s ease;
+  letter-spacing: -0.2px;
+}
+.foot-links a:hover { color: var(--green); }
+
+/* ═══════════════════════════════════════════ SCROLL REVEAL */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.9s var(--ease), transform 0.9s var(--ease);
+}
+.reveal.in {
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-delay-1 { transition-delay: 0.06s; }
+.reveal-delay-2 { transition-delay: 0.12s; }
+.reveal-delay-3 { transition-delay: 0.18s; }
+.reveal-delay-4 { transition-delay: 0.24s; }
+
+@keyframes riseIn {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ═══════════════════════════════════════════ RESPONSIVE */
+@media (max-width: 1024px) {
+  .leaks { grid-template-columns: repeat(2, 1fr); }
+  .steps-5 { grid-template-columns: repeat(2, 1fr); }
+  .workflow-grid { grid-template-columns: repeat(2, 1fr); }
+  .stats-3 { grid-template-columns: 1fr; }
+  .compare-grid, .fit-grid { grid-template-columns: 1fr; }
+  .founding-list { grid-template-columns: 1fr; }
+  .dogfood-block, .founding-block { padding: 40px 32px; }
+}
+@media (max-width: 640px) {
+  .container { padding: 0 20px; }
+  .hero { padding: 110px 0 60px; }
+  .leaks { grid-template-columns: 1fr; }
+  .steps-5 { grid-template-columns: 1fr; }
+  .workflow-grid { grid-template-columns: 1fr; }
+  .problem, .solution, .proof, .offer, .fit, .faq-section { padding: 80px 0; }
+  .final-cta { padding: 80px 0 100px; }
+  .final-cta-wrap { padding: 56px 24px; }
+  .guarantee-banner { padding: 44px 28px; }
+  .compare-card, .fit-card { padding: 32px 26px; }
+  .dogfood-table th, .dogfood-table td { padding: 12px 14px; font-size: 13px; }
+  .faq-a { padding-left: 0; }
+  .faq-item summary { font-size: 16px; gap: 16px; }
+  .section-head { margin-bottom: 40px; }
+  footer .container { flex-direction: column; text-align: center; }
+}
+</style>
+</head>
+<body>
+
+<div class="grain"></div>
+
+<!-- ══════════════════════════════════════════════ NAV -->
+<nav id="nav">
+  <div class="container">
+    <a href="/" class="brand">
+      <span class="brand-dot"></span>
+      Kelway Automation
+    </a>
+    <a href="https://api.leadconnectorhq.com/widget/booking/HQHDpjKjIqQQ0wI4Uy0j?utm_source=meta&utm_campaign=mortgage-broker-vsl&utm_content=nav" class="btn btn-primary nav-cta" target="_blank" rel="noopener">
+      Book a Call
+      <span class="arrow">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+    </a>
+  </div>
+</nav>
+
+<!-- ══════════════════════════════════════════════ HERO -->
+<section class="hero">
+  <div class="hero-grid-bg"></div>
+  <div class="container">
+    <span class="eyebrow-mono hero-eyebrow">For UK Mortgage Brokers · 50+ Leads / Month</span>
+    <h1 class="display">
+      Stop losing leads <br>you've <em>already paid for.</em>
+    </h1>
+    <p class="hero-sub">
+      We install a done-for-you system that responds to every enquiry in under 2 minutes, qualifies leads with AI, books appointments automatically, and recovers no-shows — so your advisers spend their time advising, not chasing.
+    </p>
+
+    <!-- TODO: When VSL is recorded, replace .vsl-video contents with a real <video> element or Bunny.net/Vimeo iframe embed. -->
+    <div class="vsl-wrap">
+      <div class="vsl-frame">
+        <div class="vsl-chrome">
+          <span class="chrome-dot"></span>
+          <span class="chrome-dot"></span>
+          <span class="chrome-dot"></span>
+          <span class="chrome-title">kelway · 4-min walkthrough</span>
+          <span class="chrome-status">4:18</span>
+        </div>
+        <a href="https://api.leadconnectorhq.com/widget/booking/HQHDpjKjIqQQ0wI4Uy0j?utm_source=meta&utm_campaign=mortgage-broker-vsl&utm_content=vsl-poster" target="_blank" rel="noopener" style="text-decoration: none; color: inherit;">
+          <div class="vsl-video">
+            <div class="vsl-poster-grid"></div>
+            <div class="vsl-content">
+              <div class="play-button">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+              <div class="vsl-label">Watch the 4-minute walkthrough</div>
+              <div class="vsl-meta">How we install the system in 1–2 weeks</div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <a href="https://api.leadconnectorhq.com/widget/booking/HQHDpjKjIqQQ0wI4Uy0j?utm_source=meta&utm_campaign=mortgage-broker-vsl&utm_content=hero-cta" class="btn btn-primary btn-large" target="_blank" rel="noopener">
+      Book a 15-Minute Strategy Call
+      <span class="arrow">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+    </a>
+
+    <div class="hero-trust">
+      <span>No long-term contracts</span>
+      <span>10 extra appointments month one or you don't pay</span>
+      <span>Built for UK FCA-regulated brokers</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════ PROBLEM -->
+<section class="problem" id="problem">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow-mono">The Four Leaks</span>
+      <h2 class="display">You don't have a lead problem. <em>You have a conversion problem.</em></h2>
+      <p class="lead">
+        The average UK mortgage lead converts at 3–5%. In other industries it's 15–20%. The leads aren't the issue — the operational gap between <em>enquiry</em> and <em>booked appointment</em> is bleeding 20–40% of your potential pipeline. Here's where:
+      </p>
+    </div>
+
+    <div class="leaks">
+      <div class="leak reveal reveal-delay-1">
+        <div class="leak-num">01 · Speed</div>
+        <div class="leak-stat">9×</div>
+        <div class="leak-cap">more likely to convert in &lt;5 mins vs. 30 mins</div>
+        <h3>Leads go cold before you call back.</h3>
+        <p>40% of enquiries come in evenings and weekends. The average broker takes 4+ hours to respond. By Monday, your prospect has already spoken to two other firms.</p>
+      </div>
+
+      <div class="leak reveal reveal-delay-2">
+        <div class="leak-num">02 · Qualification</div>
+        <div class="leak-stat">15–20<span style="font-size: 0.5em; color: var(--text-mute); font-style: normal;"> hrs/wk</span></div>
+        <div class="leak-cap">spent on tyre-kickers and re-qualification</div>
+        <h3>Your advisers are doing the wrong work.</h3>
+        <p>That's half a working week your highest-paid people aren't advising, aren't closing, aren't earning. They should be in front of qualified prospects, not screening unqualified ones.</p>
+      </div>
+
+      <div class="leak reveal reveal-delay-3">
+        <div class="leak-num">03 · No-Shows</div>
+        <div class="leak-stat">20–30%</div>
+        <div class="leak-cap">of booked appointments don't show</div>
+        <h3>A quarter of your booked calls vanish.</h3>
+        <p>Book 20 calls a week and lose 5? That's 260 qualified conversations gone every year — with no systematic recovery process to bring them back.</p>
+      </div>
+
+      <div class="leak reveal reveal-delay-4">
+        <div class="leak-num">04 · Dead Database</div>
+        <div class="leak-stat">80%</div>
+        <div class="leak-cap">of sales close after the 5th touchpoint</div>
+        <h3>Your old CRM is full of money.</h3>
+        <p>Most brokers stop at touchpoint 1 or 2. Hundreds of leads from the last 6–24 months said "not right now." They still need a mortgage. Many are ready now. Nobody's gone back.</p>
+      </div>
+    </div>
+
+    <div class="mid-cta reveal">
+      <a href="https://api.leadconnectorhq.com/widget/booking/HQHDpjKjIqQQ0wI4Uy0j?utm_source=meta&utm_campaign=mortgage-broker-vsl&utm_content=mid-leaks" class="btn btn-primary" target="_blank" rel="noopener">
+        See how we fix all four
+        <span class="arrow">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════ SOLUTION -->
+<section class="solution" id="solution">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow-mono">The System</span>
+      <h2 class="display">One system. Eight workflows. <em>Every lead covered.</em></h2>
+      <p class="lead">
+        Kelway Automation isn't a tool you'll have to learn or manage. It's a complete revenue operations system we build inside the CRM you already use — GHL, HubSpot, Pipedrive, whatever — and it runs autonomously, 24/7, evenings and weekends included.
+      </p>
+    </div>
+
+    <div class="steps-5">
+      <div class="step reveal reveal-delay-1">
+        <span class="step-num">1</span>
+        <div class="step-label">Discovery</div>
+        <h3>We map where your pipeline is leaking.</h3>
+        <p>A 60-minute working session on your real numbers — leads in, response times, conversion, no-shows, dead leads. We identify the costliest leak and scope the build.</p>
+      </div>
+      <div class="step reveal reveal-delay-2">
+        <span class="step-num">2</span>
+        <div class="step-label">Build</div>
+        <h3>We install the system in 1–2 weeks.</h3>
+        <p>Done-for-you. We build inside your existing CRM, configure AI qualification, plug in your calendar, and stress-test before launch. You provide access — we handle the rest.</p>
+      </div>
+      <div class="step reveal reveal-delay-3">
+        <span class="step-num">3</span>
+        <div class="step-label">Instant Response</div>
+        <h3>Every lead gets a reply in under 2 minutes.</h3>
+        <p>SMS, email, or conversational AI — 24/7. The AI is GPT-4-powered and runs a natural qualification conversation, not a checklist. It filters tyre-kickers and surfaces real prospects.</p>
+      </div>
+      <div class="step reveal reveal-delay-4">
+        <span class="step-num">4</span>
+        <div class="step-label">Booked &amp; Recovered</div>
+        <h3>Qualified leads land in your calendars. Missed ones come back.</h3>
+        <p>Confirmations, reminders, and no-show recovery happen automatically. Stalled proposals get followed up. Old leads in your database are reactivated with relevant outreach.</p>
+      </div>
+      <div class="step reveal reveal-delay-4">
+        <span class="step-num">5</span>
+        <div class="step-label">See It All</div>
+        <h3>A live dashboard. Every lead, every stage, every drop-off.</h3>
+        <p>You see what we see. Real-time. No black box. We meet monthly to optimise based on what's actually converting in your pipeline.</p>
+      </div>
+    </div>
+
+    <div class="workflow-divider reveal">
+      <span class="eyebrow-mono">8 Integrated Workflows</span>
+    </div>
+    <div class="workflow-grid">
+      <div class="wf reveal reveal-delay-1">
+        <span class="wf-num">WF · 01</span>
+        <h4>Instant Lead Response</h4>
+        <p>Every enquiry gets a reply in under 2 minutes, 24/7.</p>
+      </div>
+      <div class="wf reveal reveal-delay-1">
+        <span class="wf-num">WF · 02</span>
+        <h4>AI Qualification</h4>
+        <p>Conversational AI screens leads and filters tyre-kickers.</p>
+      </div>
+      <div class="wf reveal reveal-delay-2">
+        <span class="wf-num">WF · 03</span>
+        <h4>Automated Booking</h4>
+        <p>Qualified prospects land in your advisers' calendars.</p>
+      </div>
+      <div class="wf reveal reveal-delay-2">
+        <span class="wf-num">WF · 04</span>
+        <h4>No-Show Recovery</h4>
+        <p>Missed appointments are chased and rebooked automatically.</p>
+      </div>
+      <div class="wf reveal reveal-delay-3">
+        <span class="wf-num">WF · 05</span>
+        <h4>Proposal Follow-Up</h4>
+        <p>Stalled proposals get sequences until they convert or decline.</p>
+      </div>
+      <div class="wf reveal reveal-delay-3">
+        <span class="wf-num">WF · 06</span>
+        <h4>Lead Reactivation</h4>
+        <p>Old leads from the last 6–24 months are re-engaged.</p>
+      </div>
+      <div class="wf reveal reveal-delay-4">
+        <span class="wf-num">WF · 07</span>
+        <h4>Review &amp; Referral</h4>
+        <p>Happy clients are prompted at exactly the right moment.</p>
+      </div>
+      <div class="wf reveal reveal-delay-4">
+        <span class="wf-num">WF · 08</span>
+        <h4>Pipeline Reporting</h4>
+        <p>Live visibility into every stage of your funnel.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════ PROOF -->
+<section class="proof" id="proof">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow-mono">Proof, Not Promises</span>
+      <h2 class="display">We won't show you <em>fake case studies.</em></h2>
+      <p class="lead">
+        We're being upfront: Kelway Automation is taking on its first cohort of mortgage broker clients now. That means we don't have a wall of broker testimonials yet — and we won't fabricate them. What we will show you is the third-party data behind the system, the same system running on our own funnel, and the founding-broker terms we're offering early adopters.
+      </p>
+    </div>
+
+    <div class="stats-3">
+      <div class="stat-card reveal reveal-delay-1">
+        <div class="stat-num">9×</div>
+        <div class="stat-cap">Increase in lead-to-appointment conversion when responding in &lt;5 minutes vs. 30 minutes.</div>
+        <div class="stat-source">Lead Response Management Study, MIT / InsideSales</div>
+      </div>
+      <div class="stat-card reveal reveal-delay-2">
+        <div class="stat-num">80%</div>
+        <div class="stat-cap">Of sales close between the 5th and 12th contact. Most brokers stop at 1–2.</div>
+        <div class="stat-source">Marketing Donut / National Sales Executive Association</div>
+      </div>
+      <div class="stat-card reveal reveal-delay-3">
+        <div class="stat-num">40%+</div>
+        <div class="stat-cap">Of inbound mortgage enquiries arrive evenings and weekends — when most brokerages aren't responding.</div>
+        <div class="stat-source">Aggregated UK broker lead-source data</div>
+      </div>
+    </div>
+
+    <div class="dogfood-block reveal">
+      <h3>We run this system on our <em>own</em> funnel.</h3>
+      <p class="lead-line">Before I built Kelway, I was running Meta ads at the same time as a 9-to-5 job. Average response time on my own inbound enquiries: over 8 hours. Half went cold before I called them.</p>
+      <p>So I built the same system I now install for brokers — and pointed it at myself. Here's what changed:</p>
+
+      <table class="dogfood-table">
+        <thead>
+          <tr>
+            <th>Metric</th>
+            <th>Before</th>
+            <th>After</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Average response time</td>
+            <td class="before">8+ hours</td>
+            <td class="after">47 seconds</td>
+          </tr>
+          <tr>
+            <td>Messages until qualified</td>
+            <td class="before">n/a</td>
+            <td class="after">6 messages</td>
+          </tr>
+          <tr>
+            <td>Time to booked call</td>
+            <td class="before">2–3 days</td>
+            <td class="after">&lt;10 minutes</td>
+          </tr>
+          <tr>
+            <td>Leads going cold</td>
+            <td class="before">~50%</td>
+            <td class="after">&lt;5%</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="founding-block reveal">
+      <h3>Founding broker programme: <em>small cohort, real terms.</em></h3>
+      <p>We're working with a small group of UK brokerages this quarter to bring online as referenceable case studies. In exchange for that, founding brokers get:</p>
+      <ul class="founding-list">
+        <li><strong>Locked-in pricing</strong> for life of the engagement</li>
+        <li><strong>Build fee 100% refundable</strong> if the guarantee isn't hit</li>
+        <li><strong>Direct line to Isaac</strong> (the founder) — not an account manager</li>
+        <li><strong>First access</strong> to new workflows we add to the system</li>
+      </ul>
+      <span class="founding-meta">3 spots remaining · May–June 2026 cohort</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════ OFFER + GUARANTEE -->
+<section class="offer" id="offer">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow-mono">The Offer</span>
+      <h2 class="display">What you get. What it costs. <em>What we guarantee.</em></h2>
+    </div>
+
+    <div class="compare-grid">
+      <div class="compare-card compare-card--bad reveal reveal-delay-1">
+        <h3>Building it yourself</h3>
+        <div class="cost-row"><span class="item">Dedicated lead response hire</span><span class="price">£1,200–£1,800/mo</span></div>
+        <div class="cost-row"><span class="item">SDR / qualification function</span><span class="price">£1,500–£2,500/mo</span></div>
+        <div class="cost-row"><span class="item">Scheduling + reminders software</span><span class="price">£50–£150/mo</span></div>
+        <div class="cost-row"><span class="item">Follow-up automation tool</span><span class="price">£100–£300/mo</span></div>
+        <div class="cost-row"><span class="item">Reporting dashboard</span><span class="price">£200–£500/mo</span></div>
+        <div class="cost-row total"><span class="item">Total</span><span class="price">£3,050–£5,250/mo</span></div>
+        <p class="footnote">Plus the time to hire, train, manage, and maintain.</p>
+      </div>
+
+      <div class="compare-card compare-card--good reveal reveal-delay-2">
+        <h3><em>Kelway Automation</em></h3>
+        <div class="kelway-pricing">
+          <div class="row"><span class="label">One-time build</span><span class="val">£2,000–£8,000</span></div>
+          <div class="row"><span class="label">Monthly retainer</span><span class="val">£200/month</span></div>
+          <div class="row year-total"><span class="label">Year 1 typical total</span><span class="val">£4,400</span></div>
+        </div>
+        <ul class="includes-list">
+          <li>Full discovery and scoping session</li>
+          <li>System built into your existing CRM</li>
+          <li>AI qualification configured to your tone and questions</li>
+          <li>All 8 workflows configured (or the subset you need)</li>
+          <li>Live dashboard with full visibility</li>
+          <li>Monthly optimisation calls</li>
+          <li>Founder-direct support</li>
+        </ul>
+        <div class="breakeven">
+          <strong>Break-even: 2 additional completed cases.</strong><br>
+          Most brokers cover Year 1 in their first 4–6 weeks.
+        </div>
+      </div>
+    </div>
+
+    <div class="guarantee-banner reveal">
+      <span class="guarantee-tag">The Guarantee</span>
+      <h3>10 extra qualified appointments in your first month — <em>or you don't pay the build fee.</em></h3>
+      <p>We agree your current baseline before we start. We track every appointment in a shared live dashboard. Both sides see the same numbers in real time. If we don't deliver 10 incremental qualified appointments above that baseline within 30 days of go-live, you do not pay the build fee. No fine print. No weasel clauses.</p>
+      <p class="fine">Founding-broker terms: 100% refundable, monthly retainer included.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════ FIT CHECK -->
+<section class="fit" id="fit">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow-mono">Honest Fit Check</span>
+      <h2 class="display">This works brilliantly for some brokers. <em>Not all of them.</em></h2>
+    </div>
+
+    <div class="fit-grid">
+      <div class="fit-card fit-card--yes reveal reveal-delay-1">
+        <h3>This is <em>built for you</em> if…</h3>
+        <ul class="fit-list">
+          <li>You're a UK FCA-regulated mortgage broker or brokerage</li>
+          <li>You've got 1–15 advisers</li>
+          <li>You're getting 50+ inbound enquiries a month already</li>
+          <li>You're paying for leads but converting under 10%</li>
+          <li>Your advisers are spending too much time on admin and qualification</li>
+          <li>You've got an existing CRM full of leads nobody is chasing</li>
+          <li>You want a system, not another tool to manage</li>
+        </ul>
+      </div>
+
+      <div class="fit-card fit-card--no reveal reveal-delay-2">
+        <h3>This isn't for you if…</h3>
+        <ul class="fit-list">
+          <li>You don't have inbound lead flow yet (we convert leads — we don't generate them)</li>
+          <li>You're part of a large network where tech is centralised (SJP, Quilter, etc.)</li>
+          <li>You want a £50/mo SaaS tool you self-implement</li>
+          <li>You're commercial-only — different process (talk to us, we'll point you somewhere)</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mid-cta reveal">
+      <a href="https://api.leadconnectorhq.com/widget/booking/HQHDpjKjIqQQ0wI4Uy0j?utm_source=meta&utm_campaign=mortgage-broker-vsl&utm_content=fit-cta" class="btn btn-primary" target="_blank" rel="noopener">
+        If that first column is you — book a call
+        <span class="arrow">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════ FAQ -->
+<section class="faq-section" id="faq">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow-mono">Common Questions</span>
+      <h2 class="display">Before <em>you book.</em></h2>
+    </div>
+
+    <div class="faq-list reveal">
+      <details class="faq-item">
+        <summary>
+          <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          <span class="faq-q">Is this just an AI chatbot?</span>
+        </summary>
+        <div class="faq-a">No. It's 8 integrated workflows covering the full lead-to-revenue lifecycle. The AI conversation is one component. The rest is the operational layer between "lead comes in" and "case completes" — booking, recovery, follow-up, reactivation, reporting.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>
+          <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          <span class="faq-q">We already have a CRM. Do we need to switch?</span>
+        </summary>
+        <div class="faq-a">No. Keep it. We build inside the CRM you already use — GHL, HubSpot, Pipedrive, Salesforce, whatever. The system <em>acts</em> on your CRM data; it doesn't replace your CRM.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>
+          <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          <span class="faq-q">Can the AI give mortgage advice?</span>
+        </summary>
+        <div class="faq-a">No — and it doesn't. The system handles intake, qualification, booking, and follow-up. It never touches regulated advice, product recommendations, rate quotes, or suitability assessments. Your advisers remain in full control of the FCA-regulated process. The AI is positioned as an intake assistant, and that's clearly disclosed to leads.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>
+          <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          <span class="faq-q">How long until it's live?</span>
+        </summary>
+        <div class="faq-a">1–2 weeks from signing. Discovery, build, configuration, testing, training, and launch are all included and fully managed by us.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>
+          <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          <span class="faq-q">What if it doesn't deliver?</span>
+        </summary>
+        <div class="faq-a">That's what the guarantee is for. 10 extra qualified appointments in month one — or you don't pay the build fee. Founding brokers get a 100% refundable build fee.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>
+          <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          <span class="faq-q">I don't have time to implement this.</span>
+        </summary>
+        <div class="faq-a">You don't need to. The build is fully done-for-you. You provide CRM and calendar access; we handle everything else. The whole point is to give your team time back.</div>
+      </details>
+
+      <details class="faq-item">
+        <summary>
+          <span class="faq-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span>
+          <span class="faq-q">How do you handle data and GDPR?</span>
+        </summary>
+        <div class="faq-a">All processing happens inside your existing CRM and our UK/EU-hosted automation layer. We sign a DPA. You own all the data and the workflows.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════ FINAL CTA -->
+<section class="final-cta">
+  <div class="container">
+    <div class="final-cta-wrap reveal">
+      <span class="eyebrow-mono">Next Step</span>
+      <h2 class="display">See exactly where your <em>pipeline is leaking.</em></h2>
+      <p class="lead">A 15-minute strategy call. No deck. No pitch. We look at your actual numbers — leads in, response times, conversion, no-shows, dead database — and tell you honestly where the leakage is. If there's a fit, we'll talk about a build. If there isn't, we'll tell you that too.</p>
+      <a href="https://api.leadconnectorhq.com/widget/booking/HQHDpjKjIqQQ0wI4Uy0j?utm_source=meta&utm_campaign=mortgage-broker-vsl&utm_content=final-cta" class="btn btn-primary btn-large" target="_blank" rel="noopener">
+        Book a 15-Minute Strategy Call
+        <span class="arrow">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+      </a>
+      <div class="final-trust-points">
+        <span>10 appointments month one or you don't pay</span>
+        <span>No long-term contracts · cancel any month</span>
+        <span>3 founding broker spots remaining</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════════════════════════════════════════ FOOTER -->
+<footer>
+  <div class="container">
+    <div class="foot-brand">
+      <span class="brand-dot"></span>
+      © 2026 Kelway Automation
+      <span class="foot-tag">· part of Opsync Group</span>
+    </div>
+    <div class="foot-links">
+      <a href="/">Home</a>
+      <a href="/privacy.html">Privacy</a>
+      <a href="mailto:isaac@opsync.co.uk">isaac@opsync.co.uk</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Nav scroll state
+  const nav = document.getElementById('nav');
+  const setNav = () => nav.classList.toggle('scrolled', window.scrollY > 12);
+  setNav();
+  window.addEventListener('scroll', setNav, { passive: true });
+
+  // Reveal on scroll
+  const reveals = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => {
+      if (e.isIntersecting) {
+        e.target.classList.add('in');
+        io.unobserve(e.target);
+      }
+    });
+  }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+  reveals.forEach(r => io.observe(r));
+
+  // Track Meta Pixel "Lead" event when CTA is clicked
+  document.querySelectorAll('a[href*="leadconnectorhq.com"]').forEach(a => {
+    a.addEventListener('click', () => {
+      if (typeof fbq === 'function') {
+        fbq('track', 'Lead', { content_name: a.dataset.cta || a.textContent.trim().slice(0, 60) });
+      }
+    });
+  });
+</script>
+
+</body>
+</html>
