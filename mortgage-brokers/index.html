@@ -177,46 +177,6 @@ h1 {
 }
 .cta:active { transform: translateY(0); }
 
-/* ── TRUST STRIP ─────────────────────────────────────────── */
-.trust {
-  text-align: center;
-  padding: 32px 16px 8px;
-  font-size: 14px;
-  line-height: 1.5;
-  color: var(--text-dim);
-  font-weight: 500;
-}
-.trust-row {
-  display: inline-flex;
-  align-items: center;
-  gap: 14px;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-.trust-dot {
-  width: 3px; height: 3px; border-radius: 50%;
-  background: var(--text-mute);
-  display: inline-block;
-  opacity: 0.5;
-}
-
-/* ── FOOTER ──────────────────────────────────────────────── */
-footer {
-  text-align: center;
-  padding: 40px 16px 56px;
-  font-size: 13px;
-  line-height: 1.6;
-  color: var(--text-mute);
-}
-footer a {
-  color: inherit;
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: border-color 0.2s ease;
-}
-footer a:hover { border-color: var(--text-mute); }
-footer .sep { margin: 0 10px; opacity: 0.5; }
-
 /* ── RESPONSIVE ──────────────────────────────────────────── */
 @media (max-width: 960px) {
   h1 { font-size: 46px; line-height: 1.08; }
@@ -229,10 +189,6 @@ footer .sep { margin: 0 10px; opacity: 0.5; }
   .guarantee { font-size: 15px; margin-bottom: 30px; }
   .video-wrap { margin-bottom: 28px; }
   .cta { padding: 16px 32px; font-size: 16px; width: 100%; }
-  .trust { font-size: 13px; padding-top: 24px; }
-  .trust-row { gap: 10px; }
-  .trust-row .trust-dot { display: none; }
-  footer { font-size: 12px; padding: 32px 16px 48px; }
 }
 </style>
 </head>
@@ -277,27 +233,7 @@ footer .sep { margin: 0 10px; opacity: 0.5; }
   </div>
 
   <!-- ─── TRUST STRIP ─────────────────────────────────────── -->
-  <div class="trust">
-    <div class="trust-row">
-      <span>Built for FCA-regulated UK brokers</span>
-      <span class="trust-dot"></span>
-      <span>No long-term contracts</span>
-      <span class="trust-dot"></span>
-      <span>3 founding spots open</span>
-    </div>
-  </div>
 </main>
-
-<!-- ─── FOOTER ──────────────────────────────────────────────── -->
-<footer>
-  © 2026 Kelway Automation
-  <span class="sep">·</span>
-  part of Opsync Group
-  <span class="sep">·</span>
-  <a href="privacy.html">Privacy</a>
-  <span class="sep">·</span>
-  <a href="mailto:isaac@opsync.co.uk">isaac@opsync.co.uk</a>
-</footer>
 
 </body>
 </html>
