@@ -155,30 +155,6 @@ h1 {
   border: 0;
   display: block;
 }
-.video-placeholder {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 100%);
-  color: rgba(255,255,255,0.78);
-  font-size: 15px;
-  font-weight: 500;
-  line-height: 1.4;
-  letter-spacing: -0.005em;
-  cursor: pointer;
-  text-align: center;
-  padding: 24px;
-}
-.video-placeholder svg {
-  width: 64px;
-  height: 64px;
-  fill: var(--green);
-  margin-bottom: 16px;
-  opacity: 0.95;
-}
 
 /* ── CTA ─────────────────────────────────────────────────── */
 .cta {
@@ -252,8 +228,6 @@ footer .sep { margin: 0 10px; opacity: 0.5; }
   h1 { font-size: 32px; letter-spacing: -0.025em; line-height: 1.12; margin-bottom: 18px; }
   .guarantee { font-size: 15px; margin-bottom: 30px; }
   .video-wrap { margin-bottom: 28px; }
-  .video-placeholder { font-size: 14px; }
-  .video-placeholder svg { width: 52px; height: 52px; margin-bottom: 12px; }
   .cta { padding: 16px 32px; font-size: 16px; width: 100%; }
   .trust { font-size: 13px; padding-top: 24px; }
   .trust-row { gap: 10px; }
@@ -282,15 +256,15 @@ footer .sep { margin: 0 10px; opacity: 0.5; }
 
     <div class="guarantee">30-Day Money Back Guarantee</div>
 
-    <!-- VSL: replace .video-placeholder with iframe/video tag once VSL is recorded.
-         Bunny.net example:
-         <iframe src="https://iframe.mediadelivery.net/embed/{LIBRARY_ID}/{VIDEO_GUID}?autoplay=true&muted=true" allow="accelerometer; autoplay; encrypted-media" allowfullscreen></iframe>
-    -->
     <div class="video-wrap">
-      <div class="video-placeholder">
-        <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-        <div>Watch the 4-minute walkthrough</div>
-      </div>
+      <iframe
+        src="https://www.loom.com/embed/06f9ee0bdd8d43a69b198dc68883e33f"
+        frameborder="0"
+        webkitallowfullscreen
+        mozallowfullscreen
+        allowfullscreen
+        title="Get 10 More Mortgage Appointments — Kelway Automation"
+      ></iframe>
     </div>
 
     <a href="https://api.leadconnectorhq.com/widget/booking/HQHDpjKjIqQQ0wI4Uy0j?utm_source=meta&utm_campaign=mortgage-broker-vsl"
