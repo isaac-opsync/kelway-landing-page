@@ -2,7 +2,8 @@
 <html lang="en-GB">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#F4F0E8">
 <title>Get 10 More Mortgage Appointments In 30 Days Or You Don't Pay | Kelway Automation</title>
 <meta name="description" content="For UK mortgage brokers doing 50+ inbound leads per month. Get 10 more qualified appointments in 30 days or you don't pay. Done-for-you AI system that responds in under 2 minutes, qualifies leads, and books appointments.">
 
@@ -57,7 +58,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  -webkit-tap-highlight-color: transparent;
 }
+
+a, button { -webkit-tap-highlight-color: transparent; }
 
 /* ── NAV (top brand bar) ─────────────────────────────────── */
 .nav {
@@ -125,6 +129,7 @@ h1 {
   max-width: 860px;
   margin-left: auto;
   margin-right: auto;
+  text-wrap: balance;
 }
 
 .guarantee {
@@ -168,27 +173,44 @@ h1 {
   letter-spacing: -0.005em;
   border-radius: 8px;
   text-decoration: none;
-  transition: all 0.2s ease;
+  transition: background 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+  /* iOS Safari sometimes pads links — kill it */
+  -webkit-touch-callout: none;
 }
-.cta:hover {
+@media (hover: hover) {
+  .cta:hover {
+    background: var(--green-deep);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 18px rgba(52, 209, 126, 0.28);
+  }
+}
+.cta:active {
   background: var(--green-deep);
-  transform: translateY(-1px);
-  box-shadow: 0 6px 18px rgba(52, 209, 126, 0.28);
+  transform: translateY(0);
 }
-.cta:active { transform: translateY(0); }
 
 /* ── RESPONSIVE ──────────────────────────────────────────── */
 @media (max-width: 960px) {
   h1 { font-size: 46px; line-height: 1.08; }
 }
 @media (max-width: 640px) {
-  .nav { padding: 24px 16px 16px; }
+  .container { padding: 0 16px; }
+  .nav { padding: 22px 16px 14px; }
   .card { padding: 40px 22px 48px; }
-  .eyebrow { font-size: 15px; margin-bottom: 22px; }
+  .eyebrow { font-size: 14.5px; margin-bottom: 22px; line-height: 1.45; }
+  .eyebrow .for { padding: 3px 8px; margin-right: 6px; }
   h1 { font-size: 32px; letter-spacing: -0.025em; line-height: 1.12; margin-bottom: 18px; }
-  .guarantee { font-size: 15px; margin-bottom: 30px; }
-  .video-wrap { margin-bottom: 28px; }
-  .cta { padding: 16px 32px; font-size: 16px; width: 100%; }
+  .guarantee { font-size: 15px; margin-bottom: 28px; }
+  .video-wrap { margin-bottom: 28px; border-radius: 8px; }
+  .cta { padding: 17px 28px; font-size: 16.5px; width: 100%; }
+}
+@media (max-width: 380px) {
+  .container { padding: 0 12px; }
+  .card { padding: 32px 18px 40px; }
+  .eyebrow { font-size: 13.5px; margin-bottom: 20px; }
+  h1 { font-size: 28px; line-height: 1.14; letter-spacing: -0.02em; }
+  .guarantee { font-size: 14px; margin-bottom: 24px; }
+  .video-wrap { margin-bottom: 24px; }
 }
 </style>
 </head>
@@ -216,9 +238,11 @@ h1 {
       <iframe
         src="https://www.loom.com/embed/06f9ee0bdd8d43a69b198dc68883e33f"
         frameborder="0"
+        loading="lazy"
         webkitallowfullscreen
         mozallowfullscreen
         allowfullscreen
+        allow="autoplay; fullscreen"
         title="Get 10 More Mortgage Appointments — Kelway Automation"
       ></iframe>
     </div>
@@ -231,8 +255,6 @@ h1 {
       See If You Qualify
     </a>
   </div>
-
-  <!-- ─── TRUST STRIP ─────────────────────────────────────── -->
 </main>
 
 </body>
